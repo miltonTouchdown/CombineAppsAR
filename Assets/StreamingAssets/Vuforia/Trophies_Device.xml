@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Cuaderno2Maptek" size="25.000000 34.299999" />
+    <ImageTarget name="mousepad" size="25.000000 20.803249" />
+    <ImageTarget name="rappi" size="0.500000 0.375000" />
+    <ImageTarget name="Target_Maptek" size="0.500000 0.708255" />
+    <ImageTarget name="enfocus" size="7.000000 4.538618" />
+    <ImageTarget name="MARIO" size="6.000000 8.779891" />
+    <ImageTarget name="MarcadoresAllPhases2" size="20.000000 44.371910" />
+    <ImageTarget name="tahina2" size="0.100000 0.100067" />
+    <ImageTarget name="PuertoRicoIslan" size="0.100000 0.108696" />
+    <ImageTarget name="MarcadorPhase2" size="30.000000 21.818182" />
+    <ImageTarget name="MarcadoresAllPhases" size="30.000000 66.557861" />
+    <ImageTarget name="MarcadorPhase3" size="30.000000 21.818182" />
+    <ImageTarget name="MarcadorPhase1" size="35.000000 25.454546" />
+    <ImageTarget name="trophies_menu" size="0.100000 0.076519" />
+    <ImageTarget name="PuertoRicoTransformation" size="30.000000 22.637131" />
+    <ImageTarget name="posavasos_guatemala_back_2_BYN" size="0.100000 0.100000" />
+    <ImageTarget name="mexico_2" size="0.100000 0.109459" />
+    <ImageTarget name="guatemala_2" size="0.100000 0.112963" />
+    <ImageTarget name="Barbones_Minigame" size="0.200000 0.200000" />
+    <ImageTarget name="Posavasos_Barbones-1" size="0.100000 0.100101" />
+    <ImageTarget name="Posavasos_Barbones-2" size="0.100000 0.100101" />
+    <ImageTarget name="Posavasos_Barbones-3" size="0.100000 0.100101" />
+    <ImageTarget name="Posavasos_Barbones-4" size="0.100000 0.100101" />
+    <ImageTarget name="Trophies_Icon" size="0.100000 0.177778" />
+  </Tracking>
+</QCARConfig>
