@@ -6,24 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Apps/SwissDigital/Scenes/SwissDigital_Scene.unity
+    guid: 2b96e0ddcf7c2ab49a8550b875eef6c3
+  - enabled: 0
     path: Assets/Apps/Trophies/_ProjectAssets/Scenes/menu.unity
     guid: 2a17a3756932dba468c518953eb4beae
-  - enabled: 1
+  - enabled: 0
     path: Assets/Apps/Trophies/_ProjectAssets/Scenes/AR CAMERA.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Apps/Trophies/_ProjectAssets/Scenes/AR CAMERA - LoadTargets.unity
     guid: c65e25a5158425a4698225f8f6aecc9a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Apps/Trophies/_ProjectAssets/Scenes/PREMIO - Barbones.unity
     guid: fd3e62bcef349a648b5ee93c6d6bf3cd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Apps/Trophies/_ProjectAssets/Scenes/PREMIO - Barbones Test.unity
     guid: aa0a1e992b87d7b4eae51bf05acb4ef7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Apps/Trophies/_ProjectAssets/Scenes/PREMIO - Seven Sushi.unity
     guid: d92864157aaacb14286d485ebad93043
-  - enabled: 1
+  - enabled: 0
     path: Assets/Apps/Trophies/_ProjectAssets/Scenes/PRIZE - BuildFromData.unity
     guid: 93bf3595d3eb79b4cb094b6407eada2d
   m_configObjects: {}
