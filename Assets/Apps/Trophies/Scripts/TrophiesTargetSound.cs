@@ -3,122 +3,126 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-public class TrophiesTargetSound : MonoBehaviour {
-
-    public enum AudioType
+namespace Trophies.Trophies
+{
+    public class TrophiesTargetSound : MonoBehaviour
     {
-        NONE,
-        TARGET_ENTER,
-        TARGET_EXIT
-    }
 
-    public AudioType audioType;
-
-    AudioSource audioSource;
-    ITrackableAudioHandler audioTracker;
-    bool componentError;
-
-    public AudioClip audioClip;
-    public AudioMixerGroup output;
-
-    [Range(0,256)]
-    public int priority = 128;
-
-    [Range(0, 1)]
-    public float volume = 1;
-
-    [Range(0, 3)]
-    public float pitch = 1;
-
-    [Range(-1, 1)]
-    public float stereoPan = 0;
-
-    public bool StopOnEventEnds;
-
-
-
-    private void Awake()
-    {
-        audioTracker = GetComponent<ITrackableAudioHandler>();
-        if (audioTracker == null) componentError = true;
-
-        if (!componentError)
+        public enum AudioType
         {
-            audioSource = gameObject.AddComponent<AudioSource>();
-            audioSource.playOnAwake = false;
-            audioSource.clip = audioClip;
-            audioSource.outputAudioMixerGroup = output;
-            audioSource.priority = priority;
-            audioSource.volume = volume;
-            audioSource.pitch = pitch;
-            audioSource.panStereo = stereoPan;
-
-            audioTracker.AudioTargetFoundStartEvent += OnEnterTargetAudioStart;
-            audioTracker.AudioTargetFoundStopEvent += OnEnterTargetAudioStop;
-
-            audioTracker.AudioTargetLostStartEvent += OnLostTargetAudioStart;
-            audioTracker.AudioTargetLostStopEvent += OnLostTargetAudioStop;
-
+            NONE,
+            TARGET_ENTER,
+            TARGET_EXIT
         }
-    }
 
-    private void Start()
-    {
-        
-    }
+        public AudioType audioType;
 
-    void OnEnterTargetAudioStart()
-    {
-        if (audioType == AudioType.TARGET_ENTER && audioClip!=null)
+        AudioSource audioSource;
+        ITrackableAudioHandler audioTracker;
+        bool componentError;
+
+        public AudioClip audioClip;
+        public AudioMixerGroup output;
+
+        [Range(0, 256)]
+        public int priority = 128;
+
+        [Range(0, 1)]
+        public float volume = 1;
+
+        [Range(0, 3)]
+        public float pitch = 1;
+
+        [Range(-1, 1)]
+        public float stereoPan = 0;
+
+        public bool StopOnEventEnds;
+
+
+
+        private void Awake()
         {
-            if (!audioSource.isPlaying)
+            audioTracker = GetComponent<ITrackableAudioHandler>();
+            if (audioTracker == null) componentError = true;
+
+            if (!componentError)
             {
-                audioSource.Play();
-            }
-            else
-            {
-                audioSource.Stop();
-                audioSource.Play();
+                audioSource = gameObject.AddComponent<AudioSource>();
+                audioSource.playOnAwake = false;
+                audioSource.clip = audioClip;
+                audioSource.outputAudioMixerGroup = output;
+                audioSource.priority = priority;
+                audioSource.volume = volume;
+                audioSource.pitch = pitch;
+                audioSource.panStereo = stereoPan;
+
+                audioTracker.AudioTargetFoundStartEvent += OnEnterTargetAudioStart;
+                audioTracker.AudioTargetFoundStopEvent += OnEnterTargetAudioStop;
+
+                audioTracker.AudioTargetLostStartEvent += OnLostTargetAudioStart;
+                audioTracker.AudioTargetLostStopEvent += OnLostTargetAudioStop;
+
             }
         }
-    }
 
-    void OnEnterTargetAudioStop()
-    {
-        if (audioType == AudioType.TARGET_ENTER && audioClip != null)
+        private void Start()
         {
-            if (audioSource.isPlaying && StopOnEventEnds)
+
+        }
+
+        void OnEnterTargetAudioStart()
+        {
+            if (audioType == AudioType.TARGET_ENTER && audioClip != null)
             {
-                audioSource.Stop();
+                if (!audioSource.isPlaying)
+                {
+                    audioSource.Play();
+                }
+                else
+                {
+                    audioSource.Stop();
+                    audioSource.Play();
+                }
             }
         }
-    }
 
-    void OnLostTargetAudioStart()
-    {
-        if (audioType == AudioType.TARGET_EXIT && audioClip != null)
+        void OnEnterTargetAudioStop()
         {
-            if (!audioSource.isPlaying)
+            if (audioType == AudioType.TARGET_ENTER && audioClip != null)
             {
-                audioSource.Play();
-            }
-            else
-            {
-                audioSource.Stop();
-                audioSource.Play();
+                if (audioSource.isPlaying && StopOnEventEnds)
+                {
+                    audioSource.Stop();
+                }
             }
         }
-    }
 
-    void OnLostTargetAudioStop()
-    {
-        if (audioType == AudioType.TARGET_EXIT && audioClip != null)
+        void OnLostTargetAudioStart()
         {
-            if (audioSource.isPlaying && StopOnEventEnds)
+            if (audioType == AudioType.TARGET_EXIT && audioClip != null)
             {
-                audioSource.Stop();
+                if (!audioSource.isPlaying)
+                {
+                    audioSource.Play();
+                }
+                else
+                {
+                    audioSource.Stop();
+                    audioSource.Play();
+                }
             }
         }
-    }
 
+        void OnLostTargetAudioStop()
+        {
+            if (audioType == AudioType.TARGET_EXIT && audioClip != null)
+            {
+                if (audioSource.isPlaying && StopOnEventEnds)
+                {
+                    audioSource.Stop();
+                }
+            }
+        }
+
+    }
 }

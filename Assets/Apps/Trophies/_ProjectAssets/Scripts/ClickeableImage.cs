@@ -4,16 +4,19 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class ClickeableImage : MonoBehaviour, IPointerClickHandler
+namespace Trophies.Trophies
 {
-    [SerializeField]
-    public EmptyEvent onClickImage;
-
-    public void OnPointerClick(PointerEventData eventData)
+    public class ClickeableImage : MonoBehaviour, IPointerClickHandler
     {
-        onClickImage.Invoke();
-    }
-}
+        [SerializeField]
+        public EmptyEvent onClickImage;
 
-[System.Serializable]
-public class EmptyEvent : UnityEvent { }
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            onClickImage.Invoke();
+        }
+    }
+
+    [System.Serializable]
+    public class EmptyEvent : UnityEvent { }
+}

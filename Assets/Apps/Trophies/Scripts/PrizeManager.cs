@@ -3,18 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PrizeManager : MonoBehaviour {
-
-    public void GoMainMenu()
+namespace Trophies.Trophies
+{
+    public class PrizeManager : MonoBehaviour
     {
-        SceneManager.LoadScene(GeneralManager.SceneMenuIndex);
-    }
 
-    private void Update()
-    {
-        if (Input.GetKeyUp(KeyCode.Escape))
+        public void GoMainMenu()
         {
-            GoMainMenu();
+            SceneManager.LoadScene(GeneralManager.SceneMenuIndex);
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyUp(KeyCode.Escape))
+            {
+                GoMainMenu();
+            }
         }
     }
 }

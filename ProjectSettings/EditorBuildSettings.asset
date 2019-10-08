@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Apps/Maptek_Conference/Scenes/Register_scene.unity
+    guid: d5ec61938c0bf224ba76dc62a2f860a9
+  - enabled: 1
+    path: Assets/Apps/Maptek_Conference/Scenes/Main_menu_scene.unity
+    guid: b67aebfc5ee110f4897c3e3829404ced
+  - enabled: 1
+    path: Assets/Apps/Maptek_Conference/Scenes/AR_scene.unity
+    guid: cd51a0b89cd2a5b44bfd110c0c6bca29
+  - enabled: 0
     path: Assets/Apps/RappiGame/Scenes/Rappi_MainMenu.unity
     guid: aa3d47ec23499a14d8a2875f8ba5e6d4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Apps/RappiGame/Scenes/Rappi_Game.unity
     guid: 0758d1c2ad6406940acb85194b02610d
   - enabled: 0
