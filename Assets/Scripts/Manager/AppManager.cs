@@ -63,7 +63,7 @@ namespace Trophies.PackagesApps
 
         IEnumerator LoadAsyncScene(int index, ScreenOrientation orientation)
         {
-            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(index);
+            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(index, LoadSceneMode.Single);
 
             // Wait until the asynchronous scene fully loads
             while (!asyncLoad.isDone)
