@@ -63,10 +63,12 @@ namespace Trophies.Trophies
             PubDataContainer.PubData pubData = GeneralManager.GetPubSelected();
             if (pubData != null && pubData.hasDefinedARScene)
             {
+                Debug.Log("scene index pubdata: " + pubData.definedARScene);
                 SceneManager.LoadScene(pubData.definedARScene);
             }
             else if (pubData != null && !pubData.hasDefinedARScene)
             {
+                Debug.Log("scene index general: " + GeneralManager.SceneARIndex);
                 SceneManager.LoadScene(GeneralManager.SceneARIndex);
             }
         }
@@ -95,7 +97,7 @@ namespace Trophies.Trophies
 
         public void GoMainMenu()
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(7);
         }
 
         public void GoConcursos()

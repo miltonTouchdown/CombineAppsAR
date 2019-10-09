@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 2bb4e559e3639154b8bef411fe08dddb
+  - enabled: 1
     path: Assets/Apps/Maptek_Conference/Scenes/Register_scene.unity
     guid: d5ec61938c0bf224ba76dc62a2f860a9
   - enabled: 1
@@ -14,34 +17,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Apps/Maptek_Conference/Scenes/AR_scene.unity
     guid: cd51a0b89cd2a5b44bfd110c0c6bca29
-  - enabled: 0
+  - enabled: 1
     path: Assets/Apps/RappiGame/Scenes/Rappi_MainMenu.unity
     guid: aa3d47ec23499a14d8a2875f8ba5e6d4
-  - enabled: 0
+  - enabled: 1
     path: Assets/Apps/RappiGame/Scenes/Rappi_Game.unity
     guid: 0758d1c2ad6406940acb85194b02610d
-  - enabled: 0
+  - enabled: 1
     path: Assets/Apps/SwissDigital/Scenes/SwissDigital_Scene.unity
     guid: 2b96e0ddcf7c2ab49a8550b875eef6c3
-  - enabled: 0
+  - enabled: 1
     path: Assets/Apps/Trophies/_ProjectAssets/Scenes/menu.unity
     guid: 2a17a3756932dba468c518953eb4beae
-  - enabled: 0
+  - enabled: 1
     path: Assets/Apps/Trophies/_ProjectAssets/Scenes/AR CAMERA.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
+  - enabled: 1
     path: Assets/Apps/Trophies/_ProjectAssets/Scenes/AR CAMERA - LoadTargets.unity
     guid: c65e25a5158425a4698225f8f6aecc9a
-  - enabled: 0
+  - enabled: 1
     path: Assets/Apps/Trophies/_ProjectAssets/Scenes/PREMIO - Barbones.unity
     guid: fd3e62bcef349a648b5ee93c6d6bf3cd
-  - enabled: 0
+  - enabled: 1
     path: Assets/Apps/Trophies/_ProjectAssets/Scenes/PREMIO - Barbones Test.unity
     guid: aa0a1e992b87d7b4eae51bf05acb4ef7
-  - enabled: 0
+  - enabled: 1
     path: Assets/Apps/Trophies/_ProjectAssets/Scenes/PREMIO - Seven Sushi.unity
     guid: d92864157aaacb14286d485ebad93043
-  - enabled: 0
+  - enabled: 1
     path: Assets/Apps/Trophies/_ProjectAssets/Scenes/PRIZE - BuildFromData.unity
     guid: 93bf3595d3eb79b4cb094b6407eada2d
   m_configObjects: {}

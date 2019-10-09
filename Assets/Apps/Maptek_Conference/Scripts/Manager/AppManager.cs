@@ -7,6 +7,11 @@ namespace Trophies.Maptek
     public class AppManager : MonoBehaviour
     {
         [Header("Global UI")]
+        public int indexSceneMainMenu;
+        public int indexSceneAR;
+        public int indexSceneRegister;
+
+        [Header("Global UI")]
         public GameObject loadingScreen;
 
         [Header("User")]
@@ -74,7 +79,7 @@ namespace Trophies.Maptek
             loadingScreen.SetActive(true);
 
             // Cargar escena main menu
-            LoadScene(1, () =>
+            LoadScene(indexSceneMainMenu, () =>
             {
                 _UIMainMenu = FindObjectOfType<UIMainMenu>();
 
@@ -127,7 +132,7 @@ namespace Trophies.Maptek
             loadingScreen.SetActive(true);
 
             // Cargar escena AR
-            LoadScene(2, () =>
+            LoadScene(indexSceneAR, () =>
             {
                 LeanTween.delayedCall(.3f, () =>
                 {
@@ -138,7 +143,7 @@ namespace Trophies.Maptek
 
         public void LoadRegisterMenu()
         {
-            LoadScene(0, () =>
+            LoadScene(indexSceneRegister, () =>
             {
                 _sessionRegister = FindObjectOfType<SessionRegister>();
 
