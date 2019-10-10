@@ -643,6 +643,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6785011790070761722}
     m_Modifications:
+    - target: {fileID: 100000, guid: 71a9c40b3bbbcdf428502d0e4ae5fb46, type: 3}
+      propertyPath: m_Name
+      value: Volcan_Rano_Kau__doble_cara
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 71a9c40b3bbbcdf428502d0e4ae5fb46, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0011937
@@ -698,10 +702,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 71a9c40b3bbbcdf428502d0e4ae5fb46, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.04526152
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 71a9c40b3bbbcdf428502d0e4ae5fb46, type: 3}
-      propertyPath: m_Name
-      value: Volcan_Rano_Kau__doble_cara
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 71a9c40b3bbbcdf428502d0e4ae5fb46, type: 3}
       propertyPath: m_Materials.Array.data[0]

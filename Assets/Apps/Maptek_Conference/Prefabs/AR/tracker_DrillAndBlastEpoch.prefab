@@ -1592,10 +1592,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CON_F07_2312_1
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 0ace58dd0836f8b46a53454e8670096c, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9b34b63c1ab95fe4faa0ff48d077ee40, type: 2}
     - target: {fileID: 400000, guid: 0ace58dd0836f8b46a53454e8670096c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2848.8416
@@ -1652,6 +1648,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.5747293
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 0ace58dd0836f8b46a53454e8670096c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b34b63c1ab95fe4faa0ff48d077ee40, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ace58dd0836f8b46a53454e8670096c, type: 3}
 --- !u!1001 &6208453812560106299

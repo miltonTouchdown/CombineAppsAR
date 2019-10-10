@@ -594,6 +594,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1278021314639421376}
     m_Modifications:
+    - target: {fileID: 100000, guid: 6459e88afc1c8b24abc143d11950256d, type: 3}
+      propertyPath: m_Name
+      value: OXI
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6459e88afc1c8b24abc143d11950256d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.32
@@ -649,10 +653,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 6459e88afc1c8b24abc143d11950256d, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 6459e88afc1c8b24abc143d11950256d, type: 3}
-      propertyPath: m_Name
-      value: OXI
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6459e88afc1c8b24abc143d11950256d, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -764,6 +764,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1278021314639421376}
     m_Modifications:
+    - target: {fileID: 100000, guid: 112afd0ea3ee70043949a65bded78f71, type: 3}
+      propertyPath: m_Name
+      value: SUL
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 112afd0ea3ee70043949a65bded78f71, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -819,10 +823,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 112afd0ea3ee70043949a65bded78f71, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 112afd0ea3ee70043949a65bded78f71, type: 3}
-      propertyPath: m_Name
-      value: SUL
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 112afd0ea3ee70043949a65bded78f71, type: 3}
       propertyPath: m_Materials.Array.data[0]

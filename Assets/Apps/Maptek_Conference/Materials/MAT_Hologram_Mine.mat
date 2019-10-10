@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: MAT_Hologram_Mine
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_ShaderKeywords: _EMISSION
+  m_ShaderKeywords: _EMISSION _RECEIVE_SHADOWS_OFF _SPECULAR_SETUP
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
@@ -72,14 +72,14 @@ Material:
     - _Distance: 1
     - _DstBlend: 0
     - _GlossMapScale: 0.533
-    - _Glossiness: 0.281
+    - _Glossiness: 0.285
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
     - _NormalIntensity: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _ReceiveShadows: 1
+    - _ReceiveShadows: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SpecularIntensity: 0.19
@@ -88,10 +88,10 @@ Material:
     - _Surface: 0
     - _Transparency: 0.03
     - _UVSec: 0
-    - _WorkflowMode: 1
+    - _WorkflowMode: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.4339623, g: 0.43191528, b: 0.43191528, a: 1}
     - _EmissionColor: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 0}
-    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
     - _TintColor: {r: 0.50607806, g: 0.8113208, b: 0.501335, a: 1}
