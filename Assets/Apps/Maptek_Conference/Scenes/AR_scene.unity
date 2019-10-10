@@ -90,7 +90,7 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 112000002, guid: 84dd6155025bcfe4b953e3799d41c6ca,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1393,8 +1393,9 @@ GameObject:
   - component: {fileID: 546883385}
   - component: {fileID: 546883384}
   - component: {fileID: 546883386}
+  - component: {fileID: 546883387}
   m_Layer: 0
-  m_Name: ARManager hola
+  m_Name: ARManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1446,6 +1447,19 @@ MonoBehaviour:
   txtFps: {fileID: 0}
   updateRateSeconds: 4
   minimumFPS: 30
+--- !u!114 &546883387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546883383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec14fd54854e6a64eb8770265ad4eb54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsTrackerPose: 0
 --- !u!1 &561309634
 GameObject:
   m_ObjectHideFlags: 0
@@ -4357,7 +4371,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -7.500038}
+  m_AnchoredPosition: {x: 0.000030517578, y: -7.500038}
   m_SizeDelta: {x: 0, y: -15}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1943976806

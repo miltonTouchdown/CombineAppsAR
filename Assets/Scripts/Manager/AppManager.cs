@@ -36,9 +36,9 @@ namespace Trophies.PackagesApps
 
         public void LoadMainMenu()
         {
-            if(Maptek.AppManager.Instance != null)
+            if (Maptek.AppManager.Instance != null)
             {
-                Destroy( Maptek.AppManager.Instance.gameObject);
+                Destroy(Maptek.AppManager.Instance.gameObject);
             }
 
             if (Rappi.GameManager.Instance != null)

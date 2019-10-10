@@ -708,6 +708,7 @@ GameObject:
   m_Component:
   - component: {fileID: 628331822}
   - component: {fileID: 628331821}
+  - component: {fileID: 628331824}
   - component: {fileID: 628331823}
   m_Layer: 0
   m_Name: ARCameraManager
@@ -846,6 +847,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &628331824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628331820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec14fd54854e6a64eb8770265ad4eb54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsTrackerPose: 0
 --- !u!21 &654937287
 Material:
   serializedVersion: 6
