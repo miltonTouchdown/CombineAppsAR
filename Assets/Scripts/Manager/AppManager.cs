@@ -7,6 +7,8 @@ namespace Trophies.PackagesApps
 {
     public class AppManager : MonoBehaviour
     {
+        public GameObject loadingScreen;
+
         private static AppManager _instance;
         public static AppManager Instance
         {
@@ -36,6 +38,8 @@ namespace Trophies.PackagesApps
 
         public void LoadMainMenu()
         {
+            loadingScreen.SetActive(true);
+
             if (Maptek.AppManager.Instance != null)
             {
                 Destroy(Maptek.AppManager.Instance.gameObject);
@@ -56,18 +60,16 @@ namespace Trophies.PackagesApps
 
         public void LoadScene(int index, ScreenOrientation orientation)
         {
-            //loadingScreen.SetActive(true);
+            loadingScreen.SetActive(true);
 
             StartCoroutine(LoadAsyncScene(index, orientation));
         }
 
         IEnumerator LoadAsyncScene(int index, ScreenOrientation orientation)
         {
-            //Scene scene = SceneManager.GetActiveScene();
-            //Debug.Log("Active Scene name is: " + scene.name + "\nActive Scene index: " + scene.buildIndex);
-            //bool isMaptek = (SceneManager.GetActiveScene().buildIndex == 6);
-
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(index, LoadSceneMode.Single);
+
+            Screen.orientation = orientation;
 
             // Wait until the asynchronous scene fully loads
             while (!asyncLoad.isDone)
@@ -75,21 +77,9 @@ namespace Trophies.PackagesApps
                 yield return null;
             }
 
-            //if (isMaptek)
-            //{
-            //    AsyncOperation asyncUnload = SceneManager.UnloadSceneAsync(6);
-
-            //    // Wait until the asynchronous scene fully loads
-            //    while (!asyncUnload.isDone)
-            //    {
-            //        yield return null;
-            //    }
-            //}
-
             Resources.UnloadUnusedAssets();
-
-            Screen.orientation = orientation;
-            //loadingScreen.SetActive(false);
+        
+            loadingScreen.SetActive(false);
         }
     }
 }

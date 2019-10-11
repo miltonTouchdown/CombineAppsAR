@@ -31,7 +31,7 @@ namespace Trophies.SwissDigital
         void Start()
         {
             // Desactivar pantalla carga inicial
-            LeanTween.delayedCall(.8f, () => { Loading.SetActive(false); });
+            LeanTween.delayedCall(60f, () => { Loading.SetActive(false); });
 
             DeviceTrackerARController.Instance.RegisterDevicePoseStatusChangedCallback(OnDevicePoseStatusChanged);
             ARManager.onHitTest += OnHitGround;

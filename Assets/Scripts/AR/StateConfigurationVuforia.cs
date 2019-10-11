@@ -1,11 +1,14 @@
 ﻿using Vuforia;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class StateConfigurationVuforia : MonoBehaviour
 {
     public VuforiaBehaviour vuforiaBehaviour;
 
     public bool IsTrackerPose = false;
+
+    public UnityEvent finishPositionTracker;
 
     void Start()
     {
@@ -40,5 +43,7 @@ public class StateConfigurationVuforia : MonoBehaviour
             else
                 pdt.Stop();
         }
+
+        finishPositionTracker.Invoke();
     }
 }
