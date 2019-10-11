@@ -63,6 +63,10 @@ namespace Trophies.PackagesApps
 
         IEnumerator LoadAsyncScene(int index, ScreenOrientation orientation)
         {
+            //Scene scene = SceneManager.GetActiveScene();
+            //Debug.Log("Active Scene name is: " + scene.name + "\nActive Scene index: " + scene.buildIndex);
+            //bool isMaptek = (SceneManager.GetActiveScene().buildIndex == 6);
+
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(index, LoadSceneMode.Single);
 
             // Wait until the asynchronous scene fully loads
@@ -70,6 +74,19 @@ namespace Trophies.PackagesApps
             {
                 yield return null;
             }
+
+            //if (isMaptek)
+            //{
+            //    AsyncOperation asyncUnload = SceneManager.UnloadSceneAsync(6);
+
+            //    // Wait until the asynchronous scene fully loads
+            //    while (!asyncUnload.isDone)
+            //    {
+            //        yield return null;
+            //    }
+            //}
+
+            Resources.UnloadUnusedAssets();
 
             Screen.orientation = orientation;
             //loadingScreen.SetActive(false);

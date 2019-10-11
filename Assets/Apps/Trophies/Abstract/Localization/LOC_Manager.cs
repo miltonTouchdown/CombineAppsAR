@@ -18,6 +18,7 @@ public class LOC_Manager : MonoBehaviour {
 
     private void Awake()
     {
+        return;
         if (Instance == null)
         {
             currLang = SystemLanguage.Unknown;

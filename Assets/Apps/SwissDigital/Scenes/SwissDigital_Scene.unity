@@ -1814,6 +1814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec14fd54854e6a64eb8770265ad4eb54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vuforiaBehaviour: {fileID: 1242086919}
   IsTrackerPose: 1
 --- !u!1 &498272726
 GameObject:
@@ -4264,7 +4265,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242086917}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -1826476478, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 

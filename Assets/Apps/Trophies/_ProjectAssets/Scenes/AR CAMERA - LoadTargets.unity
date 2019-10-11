@@ -239,6 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec14fd54854e6a64eb8770265ad4eb54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vuforiaBehaviour: {fileID: 1035613969}
   IsTrackerPose: 0
 --- !u!1 &660779071
 GameObject:
