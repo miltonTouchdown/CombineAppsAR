@@ -14,6 +14,7 @@ public class StateConfigurationVuforia : MonoBehaviour
         VuforiaConfiguration.Instance.Vuforia.DelayedInitialization = false;
         vuforiaBehaviour.enabled = true;
 
+
         VuforiaARController.Instance.RegisterVuforiaStartedCallback(() => {
             SetPositionTrackerVuforia();
         });
