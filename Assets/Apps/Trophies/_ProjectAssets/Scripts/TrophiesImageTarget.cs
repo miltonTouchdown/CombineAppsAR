@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Vuforia;
 
 namespace Trophies.Trophies
@@ -37,6 +38,8 @@ namespace Trophies.Trophies
         public AnimationCurve animTrackFind;
 
         Vector3 initialScale;
+
+        public UnityEvent OnTrackerFound;
 
         protected virtual void Start()
         {
@@ -236,7 +239,7 @@ namespace Trophies.Trophies
             SetComponents(true);
             // Inform ARCameraManager
 
-
+            OnTrackerFound.Invoke();
         }
 
 

@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Apps/Trophies/_ProjectAssets/Scenes/PRIZE - BuildFromData.unity
     guid: 93bf3595d3eb79b4cb094b6407eada2d
+  - enabled: 1
+    path: Assets/Apps/Donations/Scene/AR CAMERA Donations.unity
+    guid: 035a40614edf5f24589a2611a61c940a
   m_configObjects: {}
